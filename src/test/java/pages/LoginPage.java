@@ -10,14 +10,14 @@ public class LoginPage extends CommonMethods {
     public LoginPage() {
         PageFactory.initElements(driver, this);
     }
-    
+
     @FindBy(id="Email")
     public WebElement emailField;
 
     @FindBy(id="Password")
     public WebElement passwordField;
 
-    @FindBy(className = "button-1 login-button")
+    @FindBy(css = ".button-1.login-button")
     public WebElement loginBtn;
 
     @FindBy(className = "account")
