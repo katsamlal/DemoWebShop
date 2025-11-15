@@ -1,6 +1,7 @@
 Feature: login related scenarios
 
 
+  @smoke @regression
   Scenario: user is able to login using valid username and password
     Given user is able to access login page
     When user enters valid username
@@ -8,6 +9,7 @@ Feature: login related scenarios
     And user clicks on log in button
     Then user is successfully logged in
 
+  @smoke @regression
   Scenario: user is unable to login using invalid username and password
     Given user is able to access login page
     When user enters invalid username

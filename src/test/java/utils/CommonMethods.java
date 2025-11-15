@@ -1,6 +1,7 @@
 package utils;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -34,5 +35,13 @@ public class CommonMethods extends PageInitializer {
         if (driver != null) {
             driver.quit();
         }
+    }
+
+    public static void click(WebElement element) {
+        element.click();
+    }
+
+    public static void sendText(String text, WebElement element) {
+        element.sendKeys(text);
     }
 }
