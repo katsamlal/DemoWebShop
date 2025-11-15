@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         glue = "steps",
         dryRun = true,
         tags = "",
-        plugin = {"pretty","html:target/cucumber.html"}
+        plugin = {"pretty","html:target/cucumber.html", "junit:target/surefire-reports/TestResults.xml"}
 )
 
 public class TestRunner {
